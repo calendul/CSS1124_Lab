@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<head>
+    <link rel="My first CSS stylesheet" type="text/css" href=" 111208039_CSS_Lab.css">
+</head>
+<body style="color: black; background-color: #f0f0f0; font-family: Arial, sans-serif; text-align: center;">
+    <h1 style="font-family: Georgia, serif;">My first style page</h1>
+    <p>This is the first paragraph of my style page.</p>
+    <p>Here goes the second paragraph with some content.</p>
+    <p>The third paragraph wraps up the content of my style page.</p>
+    
+    <ul class="navbar">
+      <li><a href="#">Home</a></li>
+      <li><a href="#">About</a></li>
+      <li class="dropdown">
+        <a href="#">Services</a>
+        <div class="dropdown-content">
+          <a href="#">Web Design</a>
+          <a href="#">Graphic Design</a>
+          <a href="#">SEO</a>
+        </div>
+      </li>
+      <li><a href="#">Contact</a></li>
+    </ul>
+  
+    <style>
+      body {
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        min-height: 100vh;
+        background-color: #333;
+        color: white;
+        font-family: 'Courier New', monospace;
+      }
+  
+      h1 {
+        font-family: 'Times New Roman', serif;
+      }
+  
+      .navbar {
+        list-style: none;
+        display: flex;
+        margin: 0;
+        padding: 0;
+        justify-content: center;
+      }
+  
+      .navbar li {
+        margin-right: 1em;
+      }
+  
+      .navbar li a {
+        text-decoration: none;
+        color: white;
+        padding: 0.5em;
+        background-color: #555;
+        display: block;
+      }
+  
+      .navbar li:hover {
+        background-color: #777;
+      }
+  
+      .dropdown {
+        position: relative;
+      }
+  
+      .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: #555;
+        min-width: 160px;
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        z-index: 1;
+      }
+  
+      .dropdown:hover .dropdown-content {
+        display: block;
+      }
+  
+      @media all {
+        /* Styles for all devices */
+      }
+  
+      @media print {
+        /* Styles for print media */
+      }
+    </style>
+  </body>
+  </html>

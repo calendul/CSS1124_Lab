@@ -1,0 +1,35 @@
+body{background-color: lightblue;
+    font-family: 'Times New Roman', Times, serif;
+}
+ul{position: fixed;}
+ul,em{top: auto;left: auto;width: fit-content;}
+
+
+@media all {
+    /* Styles for all devices */
+    body {
+        font-size: 16px;
+    }
+
+    h1 {
+        color:dodgerblue;
+    }
+
+    .navbar {
+        background-color: lightblue;
+        color:black;
+        padding: 10px;
+        list-style-type: none;
+    }
+}
+
+@media print {
+    /* Styles for printing */
+    body {
+        font-size: 14px;
+    }
+
+    h1 {
+        color: black;
+    }
+}
